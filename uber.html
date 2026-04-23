@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uber Vehicle Booking</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background:#f5f5f5;
+    text-align:center;
+}
+
+.header{
+    margin-top:20px;
+}
+
+.header img{
+    width:120px;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    width:250px;
+    padding:20px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:150px;
+    height:120px;
+}
+
+input{
+    width:80%;
+    padding:8px;
+    margin-top:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    margin-top:10px;
+    padding:8px 20px;
+    background:#000;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#333;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png">
+</div>
+
+<div class="container">
+
+<div class="card">
+<img src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=450/height=254/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy85MjAwMTg5YS03MWMwLTRmNmQtYTlkZS0xYjZhODUyMzkwNzkucG5n">
+<br>
+<input id="kilometer" type="text" placeholder="Enter KM">
+<br>
+<button onclick="auto()">Caclulate</button>
+</div>
+
+<div class="card">
+<img src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=1344/height=1344/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9mYzEwMWZmOC04MWExLTQ2YzMtOTk1YS02N2I0YmJkMmYyYmYuanBn">
+<br>
+<input id="kilometer" type="text" placeholder="Enter KM">
+<br>
+<button onclick="auto()">Caclulate</button>
+</div>
+
+<div class="card">
+<img src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=1152/height=768/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9lMDI1OTA1Yy00M2JkLTQ3OTctOTFlNi0yOWQwYWU5Y2I0OGQucG5n">
+<br>
+<input id="kilometer" type="text" placeholder="Enter KM">
+<br>
+<button onclick="auto()">Caclulate </button>
+</div>
+
+</div>
+<script>
+  function auto()
+{
+    let input = document.getElementById("kilometer").value;
+    alert(`Total RS Charged for the ride is ${input * 10}`);
+}
+    
+</script>
+</body>
+</html>

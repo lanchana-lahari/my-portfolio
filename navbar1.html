@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+          
+        .navblack{
+               background-color:black;
+               color: whitesmoke;
+        }
+        #menublack, .searchblack {
+            height: 100px;
+            width: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+         #menublack > a.active{
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 20px;
+         }
+         #menublack > a.light{
+            color:lightgrey;
+            text-decoration: none;
+            font-size: 20px;
+         }
+         .searchblack input{
+            border-radius: 4px;
+            border: none;
+            padding: 15.5px 45px;
+            color:gray;
+            font-size:medium;
+         }
+         .searchblack button{
+            border-radius: 5px;
+            border: 2px solid white ;
+            background-color: black;
+            color:white;
+            font-size: medium;
+            padding: 14px 15px;
+         }
+         
+        .navblue{
+               background-color:blue;
+        }
+        #menublue, .searchblue {
+            height: 100px;
+            width: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+         #menublue > a.active{
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 20px;
+         }
+         #menublue > a.light{
+            color:lightgrey;
+            text-decoration: none;
+            font-size: 20px;
+         }
+         .searchblue input{
+            border-radius: 4px;
+            border: none;
+            padding: 15.5px 45px;
+            color:gray;
+            font-size:medium;
+         }
+         .searchblue button{
+            border-radius: 5px;
+            border: 2px solid white ;
+            background-color: blue;
+            color:white;
+            font-size: medium;
+            padding: 14px 15px;
+         }
+
+        .navwhite{
+               background-color:whitesmoke;
+        }
+        #menuwhite, .searchwhite {
+            height: 100px;
+            width: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+         #menuwhite > a.active{
+            color: rgba(0, 0, 0, 0.71);
+            text-decoration: none;
+            font-size: 20px;
+         }
+         #menuwhite > a.light{
+            color:grey;
+            text-decoration: none;
+            font-size: 20px;
+         }
+         .searchwhite input{
+            border-radius: 4px;
+            border: none;
+            padding: 15.5px 45px;
+            color:blue;
+            font-size:medium;
+         }
+         .searchwhite button{
+            border-radius: 5px;
+            border: 2px solid blue ;
+            background-color: white;
+            color:blue;
+            font-size: medium;
+            padding: 14px 15px;
+         }
+         
+         
+    </style>
+</head>
+<body>
+    <nav class="navblack">
+        <div id="menublack">
+            <a href="" class="active">Brand</a>
+            <a href="" class="active">Home</a>
+            <a href="" class="light">About</a>
+            <a href="" class="light">Products</a>
+        </div>
+        <div class="searchblack">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </nav>
+    <br> 
+    <nav class="navblue">
+        <div id="menublue">
+            <a href="" class="active">Brand</a>
+            <a href="" class="active">Home</a>
+            <a href="" class="light">About</a>
+            <a href="" class="light">Products</a>
+        </div>
+        <div class="searchblue">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </nav>
+    <br>
+     <nav class="navwhite">
+        <div id="menuwhite">
+            <a href="" class="active">Brand</a>
+            <a href="" class="active">Home</a>
+            <a href="" class="light">About</a>
+            <a href="" class="light">Products</a>
+        </div>
+        <div class="searchwhite">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </nav>
+</body>
+</html>

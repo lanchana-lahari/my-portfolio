@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createBankAccount(){
+            let balance=0
+            return {
+                deposit:function(amount){
+                    if (amount<=0){
+                        alert("Invalid amount")
+                    }else {
+                        balance=amount+balance
+                        console.log(`Deposited amount: ${amount}, new balance: ${balance}`)
+                    }
+                },
+                withdraw: function(amount){
+                    if(amount<=0){
+                        alert("Invalid amount")
+                    }else if(amount>balance){
+                        alert("Insufficient balance")
+                    }else {
+                        balance=balance-amount
+                        console.log(`withdraw: ${amount}, current balance: ${balance}`)
+                    }
+                }
+            }
+        }
+        let Nagasai=createBankAccount()
+        Nagasai.deposit(5000)
+        Nagasai.deposit(1500)
+        Nagasai.withdraw(500)
+        Nagasai.withdraw(1500)
+        
+    </script>
+</body>
+</html>

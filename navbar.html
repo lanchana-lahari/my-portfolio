@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: gold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+        #logoblock,#menublock{
+            height: 100px;
+            width: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #menublock>a{
+            color: black;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        #menublock>a:hover{
+            color: white;
+            border-bottom: 5px solid black;
+        }
+        #logoblock img{
+            height:140px ;
+            mix-blend-mode: multiply; 
+        }
+        #logoblock img:hover{
+            transition: all 2s;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="logoblock">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.CukDXSevfNa1B9Z7vMf7yQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+        </div>
+        <div id="menublock" style="width: 600px;">
+            <a href="">HOME</a>
+            <a href="">MENU</a>
+            <a href="">CONTACT</a>
+            <a href="">LOGIN</a>
+        </div>
+    </nav>
+</body>
+</html>
